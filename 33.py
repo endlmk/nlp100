@@ -20,8 +20,6 @@ with open('neko.txt.mecab') as file:
         line_m.append(mapping)
 
 for l in result:
-    pre = ""
-    post = ""
     for i in range(0, len(l) - 2):
         if l[i]['pos'] == '名詞' and l[i + 1]['base'] == 'の' and l[i + 2]['pos'] == '名詞':
             print(l[i]['surface'] + l[i + 1]['surface'] + l[i + 2]['surface'])
