@@ -1,9 +1,6 @@
 
-#%%
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-import re
-import string
 
 def preprocess(x: str):
     return x
